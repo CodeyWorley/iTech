@@ -10,7 +10,7 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 
         <!-- Title -->
-        <title>iTech Contact</title>
+        <title>Contact | iTech</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -52,6 +52,67 @@
               </div>
             </nav>
         </section>
-        
+
+        <!-- Page Head -->
+        <section>
+            <div class="page-header text-center">
+                <h1>Contact Us</h1>
+                <h4>We are here to help!</h4>
+            </div>
+        </section>
+
+        <!-- Alerts -->
+        @if (Session::has('message'))
+           <div class="alert alert-info text-center">{{ Session::get('message') }}</div>
+        @endif
+
+        <!-- Bread Crumbs -->
+        <section>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active">Contact</li>
+            </ol>
+        </section>
+
+        <!-- Contact -->
+        {!! Form::open(array('route' => 'contact_store', 'class' => 'form')) !!}
+        <div class="row" style="padding-top:20px">
+            <div class="col-xs-2">
+                <span>Name</span>
+            </div>
+            <div class="col-xs-2">
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="Name" required="required" data-error="First name is required.">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:20px">
+            <div class="col-xs-2">
+                <span>Email</span>
+            </div>
+            <div class="col-xs-2">
+                <input id="form_name" type="text" name="email" class="form-control" placeholder="Email" required="required" data-error="First name is required.">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:20px">
+            <div class="col-xs-2">
+                <span>Phone</span>
+            </div>
+            <div class="col-xs-2">
+                <input id="form_name" type="text" name="phone" class="form-control" placeholder="Phone" required="required" data-error="First name is required.">
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:20px">
+            <div class="form-group">
+                {!! Form::submit('Lets Fix It!',
+                  array('class'=>'btn btn-primary')) !!}
+            </div>
+        </div>
+        {!! Form::close() !!}
+
     </body>
 </html>

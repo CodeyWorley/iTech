@@ -22,7 +22,6 @@
             span {
                 font-size: 20px;
             }
-
             button, input, optgroup, select, textarea {
                 margin: 3px;
                 margin-left: 25px;
@@ -110,42 +109,138 @@
                 function changePhoneImage() {
                     var image = document.getElementById("modelSelect").value;
                     document.getElementById("phoneImage").innerHTML = image;
+
                     //iphone 7
-                    if (image == '<img src="media/iphone.png" class="img-responsive" alt="iPhone Repair">'){
+                    if (image == '<img src="media/iphone-7.png" class="img-responsive" alt="iPhone Repair">'){
                         var repair = document.getElementById("repairSelect").value;
                         if (repair == 'lcd'){
-                            document.getElementById("repairPrice").innerHTML = "$0";
+                            document.getElementById("repairPrice").innerHTML = "$149";
                         }
                         if (repair == 'battery'){
-                            document.getElementById("repairPrice").innerHTML = "$2";
+                            document.getElementById("repairPrice").innerHTML = "$89";
                         }
                         if (repair == 'chargeport'){
-                            document.getElementById("repairPrice").innerHTML = "$3";
+                            document.getElementById("repairPrice").innerHTML = "$89";
                         }
                         if (repair == 'water'){
-                            document.getElementById("repairPrice").innerHTML = "$4";
+                            document.getElementById("repairPrice").innerHTML = "$69";
                         }
                         if (repair == 'misc'){
-                            document.getElementById("repairPrice").innerHTML = "$5";
+                            document.getElementById("repairPrice").innerHTML = "$89";
                         }
                     }
                     //iphone 7+
-                    if (image == '<img src="media/ipad.png" class="img-responsive" alt="iPhone Repair">'){
+                    if (image == '<img src="media/iphone-7-plus.png" class="img-responsive" alt="iPhone Repair">'){
                         var repair = document.getElementById("repairSelect").value;
                         if (repair == 'lcd'){
-                            document.getElementById("repairPrice").innerHTML = "$1";
+                            document.getElementById("repairPrice").innerHTML = "$169";
                         }
                         if (repair == 'battery'){
-                            document.getElementById("repairPrice").innerHTML = "$2";
+                            document.getElementById("repairPrice").innerHTML = "$89";
                         }
                         if (repair == 'chargeport'){
-                            document.getElementById("repairPrice").innerHTML = "$3";
+                            document.getElementById("repairPrice").innerHTML = "$89";
                         }
                         if (repair == 'water'){
-                            document.getElementById("repairPrice").innerHTML = "$4";
+                            document.getElementById("repairPrice").innerHTML = "$69";
                         }
                         if (repair == 'misc'){
-                            document.getElementById("repairPrice").innerHTML = "$5";
+                            document.getElementById("repairPrice").innerHTML = "$89";
+                        }
+                    }
+                    //iphone 6s
+                    if (image == '<img src="media/iphone-6s.png" class="img-responsive" alt="iPhone Repair">'){
+                        var repair = document.getElementById("repairSelect").value;
+                        if (repair == 'lcd'){
+                            document.getElementById("repairPrice").innerHTML = "$119";
+                        }
+                        if (repair == 'battery'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                        if (repair == 'chargeport'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                        if (repair == 'water'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'misc'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                    }
+                    //iphone 6s+
+                    if (image == '<img src="media/iphone-6s-plus.png" class="img-responsive" alt="iPhone Repair">'){
+                        var repair = document.getElementById("repairSelect").value;
+                        if (repair == 'lcd'){
+                            document.getElementById("repairPrice").innerHTML = "$139";
+                        }
+                        if (repair == 'battery'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                        if (repair == 'chargeport'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                        if (repair == 'water'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'misc'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                    }
+                    //iphone 6
+                    if (image == '<img src="media/iphone-6.png" class="img-responsive" alt="iPhone Repair">'){
+                        var repair = document.getElementById("repairSelect").value;
+                        if (repair == 'lcd'){
+                            document.getElementById("repairPrice").innerHTML = "$99";
+                        }
+                        if (repair == 'battery'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'chargeport'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'water'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'misc'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                    }
+                    //iphone 6+
+                    if (image == '<img src="media/iphone-6-plus.png" class="img-responsive" alt="iPhone Repair">'){
+                        var repair = document.getElementById("repairSelect").value;
+                        if (repair == 'lcd'){
+                            document.getElementById("repairPrice").innerHTML = "$129";
+                        }
+                        if (repair == 'battery'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'chargeport'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'water'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'misc'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                    }
+                    //iphone 5/5s/5c
+                    if (image == '<img src="media/iphone-5.png" class="img-responsive" alt="iPhone Repair">'){
+                        var repair = document.getElementById("repairSelect").value;
+                        if (repair == 'lcd'){
+                            document.getElementById("repairPrice").innerHTML = "$79";
+                        }
+                        if (repair == 'battery'){
+                            document.getElementById("repairPrice").innerHTML = "$59";
+                        }
+                        if (repair == 'chargeport'){
+                            document.getElementById("repairPrice").innerHTML = "$59";
+                        }
+                        if (repair == 'water'){
+                            document.getElementById("repairPrice").innerHTML = "$69";
+                        }
+                        if (repair == 'misc'){
+                            document.getElementById("repairPrice").innerHTML = "$59";
                         }
                     }
                 }
@@ -166,11 +261,13 @@
                             </div>
                             <div class="col-xs-2">
                                 <select id="modelSelect" onchange="changePhoneImage()">
-                                    <option value='<img src="media/iphone.png" class="img-responsive" alt="iPhone Repair">'>iPhone 7
-                                    <option value='<img src="media/ipad.png" class="img-responsive" alt="iPhone Repair">'>iPhone 7 Plus
-                                    <option value='<img src="media/iphone.png" class="img-responsive" alt="iPhone Repair">'>iPhone 6
-                                    <option value='<img src="media/iphone.png" class="img-responsive" alt="iPhone Repair">'>iPhone 6 Plus
-                                    <option value='<img src="media/iphone.png" class="img-responsive" alt="iPhone Repair">'>iPhone 5/5s/5c
+                                    <option value='<img src="media/iphone-7.png" class="img-responsive" alt="iPhone Repair">'>iPhone 7
+                                    <option value='<img src="media/iphone-7-plus.png" class="img-responsive" alt="iPhone Repair">'>iPhone 7 Plus
+                                    <option value='<img src="media/iphone-6s.png" class="img-responsive" alt="iPhone Repair">'>iPhone 6s
+                                    <option value='<img src="media/iphone-6s-plus.png" class="img-responsive" alt="iPhone Repair">'>iPhone 6s Plus
+                                    <option value='<img src="media/iphone-6.png" class="img-responsive" alt="iPhone Repair">'>iPhone 6
+                                    <option value='<img src="media/iphone-6-plus.png" class="img-responsive" alt="iPhone Repair">'>iPhone 6 Plus
+                                    <option value='<img src="media/iphone-5.png" class="img-responsive" alt="iPhone Repair">'>iPhone 5/5s/5c
                                 </select>
                             </div>
                         </div>
