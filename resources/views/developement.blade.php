@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Contact')
+@section('title', 'Developement')
 
 @section('styles')
 .row {
     margin-right: 50px;
+}
+h3 {
+    color: #377def;
 }
 @endsection
 
@@ -19,7 +22,7 @@
         <section>
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="/">Home</a></li>
-              <li class="breadcrumb-item active">Contact</li>
+              <li class="breadcrumb-item active">Developement</li>
             </ol>
         </section>
 
@@ -81,17 +84,14 @@
                 </div>
                 <div class="col-sm-2"></div>
                 <div class="col-sm-3">
-                    <h3>Channels</h3>
-                    <p>520.789.6296</p>
-                    <p>codeyworley@gmail.com</p>
-                    <h3>Hours</h3>
-                    <p>Monday - Saturday 7:00 am to 10:00 pm</p>
-                    <p>Sunday 9:00 am to 5:00 pm</p>
-                    <p> 24/7 Emergency Service Available</p>
-                    <h3>Venues</h3>
-                    <p>Wednesday - Good Life</p>
-                    <p>Thursday - Valle Del Oro</p>
-                    <p>Friday - Mesa Regal</p>
+                    <h3>Website Developement</h3>
+                    <p>Give your brand/product the online pressence it deserves! With our unique dev style we can craft a site to fit any budget. We also offer consulting and developement on existing sites!</p>
+
+                    <h3>Store Building & SEO</h3>
+                    <p>Move your store to the internet and increase customer base exponentially! </p>
+
+                    <h3>Custom Programming</h3>
+                    <p>Have a project that needs a user interface or some automaton? We have a multitude of custom projects under our belt and love a good challenge!</p>
                 </div>
                 <div class="col-md-1"></div>
             </div>

@@ -11,3 +11,7 @@ Email: {{ $email }}
 <p>
 Phone: {{ $phone }}
 </p>
+
+<p>
+Message: {{ $request }}
+</p>

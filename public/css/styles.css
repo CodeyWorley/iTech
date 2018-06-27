@@ -3,92 +3,66 @@
 html, body {
     background-color: #fff;
     color: black;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 100;
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 400;
     height: 100vh;
     margin: 0;
-}/* Body */
+    font-size: 24px;
+}
+.form-control {
+    font-size: 22px;
+}
+.btn {
+    font-size: 22px;
+    padding: 0px 15px;
+}
+h1 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 38px;
+}
+h4 {
+    font-size: 24px;
+}
+/* Body */
 
 
 /* Nav Bar */
-.logo {
-    margin-top: -8px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    color: black;
-}
-.navbar-nav {
-    font-family: 'Exo', sans-serif;
-}
 .navbar-default {
-    border-color: black;
+    color: black;
     background-color: white;
-    border-radius: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    margin-bottom: 0px;
+    border-color: white;
+}
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 38px;
 }
 .navbar-default .navbar-nav>li>a {
     color: black;
 }
-a, a:focus, a:hover{
-    color: black;
-    text-decoration: none;
-}/* Nav Bar */
-/* Nav Collapse */
-.navbar-toggle {
-    margin-right: 25px;
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 0px;
 }
 .navbar-default .navbar-toggle {
     border-color: black;
+    border-radius: 0px;
 }
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #377def;
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: white;
 }
-@media screen and (min-width:768px){
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        display: block;
-        width: 150px;
-        text-align: center;
-        color: black;
-        border-width: 10px;
-        border-color: black;
-    }
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -7%;
-    }
-}
-@media (max-width: 990px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-} /* Nav Collapse */
 
 /* Page Header */
+a:focus, a:hover {
+    color: white;
+    text-decoration: none;
+}
+a {
+    color: white;
+}
 .page-header {
     background-color: #2a2a2a;
     color: #fff;
@@ -101,7 +75,6 @@ a, a:focus, a:hover{
     margin-top: 0px;
 }
 .page-header h4 {
-    font-family: 'Exo', sans-serif;
 }/* Page Header */
 
 /* Bread Crumbs */
@@ -112,11 +85,57 @@ a, a:focus, a:hover{
     background-color: #fff;
     color: #377def;
 }
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+}
 
 /* Row */
 .row {
     margin-left: 0px;
     margin-right: 0px;
+}
+
+/* item pages */
+.form-control {
+    border-radius: 0px;
+    border-color: #555;
+    padding: 6px 6px;
+    color: black;
+    width: 220px;
+}
+button, input, optgroup, select, textarea {
+    margin: 3px;
+    margin-left: 25px;
+    height: 34px;
+}
+.col-xs-2 {
+    margin-right: 40px;
+}
+.col-xs-4 {
+    width: 66%;
+}
+.col-xs-3 {
+    margin-right: 40px;
+}
+.col-xs-5 {
+    padding-left: 10px;
+}
+.col-md-4 {
+    padding-left: 10px;
+    margin-right: 10px;
+}
+.btn-primary {
+    margin-left: 120px;
+}
+span {
+    font-size: 32px;
+}
+hr {
+    border-top: 1px solid #555;
+}
+.breadcrumb>.active {
+    color: #377def;
 }
 
 /* Page Cards */
@@ -129,7 +148,7 @@ div.panel:hover {
 div.panel-footer {
     background-color: white;
     border-color: white;
-    font-size: 20px;
+    font-size: 24px;
 }/* Page Cards */
 
 /* Carousel */
@@ -181,3 +200,18 @@ div.panel-footer {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
     background-repeat: repeat-x;
 }/* Carousel */
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+.fa {
+    margin: 10px 10px 10px;
+    color: white;
+    font-size: large;
+}

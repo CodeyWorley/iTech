@@ -16,7 +16,9 @@ class AboutController extends Controller {
             array(
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),
-                'phone' => $request->get('phone')
+                'phone' => $request->get('phone'),
+                'request' => $request->get('request'),
+                'zip' => $request->get('zip')
             ), function($message)
         {
             $message->from('codeyworley@gmail.com');
